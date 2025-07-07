@@ -1,19 +1,18 @@
-/* README.md */
 # Control IR Neo
 
 Control remoto IR para Samsung Gear 2 Neo, inspirado en el Casio CMD-40. Permite controlar TVs, decodificadores, aires acondicionados y más desde la muñeca.
 
 ## Características
 - Control universal IR
-- Modo aprendizaje IR
-- Perfiles múltiples con íconos y colores
+- Modo aprendizaje IR (próximamente)
+- Perfiles múltiples (Sala, Cuarto, etc.)
 - Sonido configurable
-- Inspirado en Casio CMD-40
+- Inspiración visual del Casio CMD-40
 
 ## Instalación
-1. Instala Tizen Studio y configura tu reloj Gear 2 Neo en modo desarrollador.
-2. Usa `sdb install ControlIRNeo.wgt` para instalar la app.
-3. Abre la app en tu reloj y selecciona tu perfil/dispositivo.
+1. Instala Tizen Studio 6.1 y el paquete Wearable 6.0
+2. Importa el proyecto y compílalo
+3. Conecta el Gear 2 Neo y usa `sdb install ControlIRNeo.wgt`
 
-## Créditos
+## Autor
 Desarrollado por Miguel Ortiz — [@Migueliito18](https://github.com/Migueliito18)
