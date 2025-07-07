@@ -1,13 +1,26 @@
-/* config.xml */
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="com.miguel.ControlIRNeo" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="com.miguel.ControlIRNeo"
+        version="1.0.0"
+        viewmodes="maximized">
+
   <content src="index.html" />
   <name>Control IR Neo</name>
   <icon src="logo.png" />
-  <description>Control remoto universal IR para Gear 2 Neo inspirado en Casio CMD-40</description>
+  <description>Control remoto IR inspirado en el Casio CMD-40. Compatible con Gear 2 Neo.</description>
   <author email="migueliito18@gmail.com" href="https://github.com/Migueliito18">Miguel Ortiz</author>
   <license href="">MIT</license>
-  <tizen:application id="com.miguel.ControlIRNeo" package="ControlIRNeo" required_version="2.2.1" />
+
+  <!-- Compatibilidad con Tizen 2.2.1+ -->
+  <tizen:application id="com.miguel.ControlIRNeo"
+                     package="ControlIRNeo"
+                     required_version="2.2.1" />
+
+  <!-- Privilegios mínimos -->
   <tizen:privilege name="http://tizen.org/privilege/internet" />
   <tizen:privilege name="http://tizen.org/privilege/application.launch" />
+
+  <!-- Orientación preferida -->
+  <tizen:setting screen-orientation="portrait" />
 </widget>
