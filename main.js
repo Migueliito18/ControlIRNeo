@@ -1,16 +1,17 @@
-/* main.js */
 const buttons = document.querySelectorAll('.btn');
 const soundToggle = document.getElementById('sound-toggle');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const irCommand = button.getAttribute('data-ir');
-    console.log(`Sending IR command: ${irCommand}`);
+    console.log(`Enviando comando IR: ${irCommand}`);
 
-    // Enviar IR (simulado en consola)
+    // Simulación del sonido
     if (soundToggle.checked) {
       const audio = new Audio('click.mp3');
       audio.play();
     }
+
+    // Aquí iría el código real para enviar el IR
   });
 });
